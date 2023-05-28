@@ -1,0 +1,11 @@
+{
+	"editor.formatOnSave": true,
+
+	// Configuration for format style files
+	"[scss]": {
+		"editor.formatOnSave": false,
+		"editor.codeActionsOnSave": {
+			"source.fixAll.stylelint": false
+		}
+	}
+}
