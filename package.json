@@ -19,10 +19,20 @@
 		"start": "wp-scripts start"
 	},
 	"devDependencies": {
-		"@wordpress/eslint-plugin": "14.7.0",
-		"@wordpress/prettier-config": "2.17.0",
-		"@wordpress/scripts": "26.5.0",
-		"@wordpress/stylelint-config": "21.17.0",
+		"@wordpress/eslint-plugin": "^14.8.0",
+		"@wordpress/prettier-config": "^2.18.0",
+		"@wordpress/scripts": "^26.6.0",
+		"@wordpress/stylelint-config": "^21.18.0",
 		"eslint-config-prettier": "8.8.0"
+	},
+	"dependencies": {
+		"@dnd-kit/core": "^6.0.8",
+		"@dnd-kit/modifiers": "^6.0.1",
+		"@dnd-kit/sortable": "^7.0.2",
+		"@dnd-kit/utilities": "^3.2.1",
+		"@wordpress/blob": "^3.35.0",
+		"@wordpress/compose": "^6.12.0",
+		"@wordpress/data": "^9.5.0",
+		"@wordpress/element": "^5.12.0"
 	}
 }

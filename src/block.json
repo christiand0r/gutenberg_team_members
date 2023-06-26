@@ -1,16 +1,62 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/boilerplate",
+	"name": "gutenberg/team-members",
 	"version": "0.1.0",
-	"title": "Boilerplate",
-	"category": "widgets",
-	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"title": "Team Members",
+	"category": "media",
+	"icon": "groups",
+	"description": "Column layout to show all members of a team",
+	"keywords": [ "group", "members", "team", "grid" ],
 	"supports": {
-		"html": false
+		"html": false,
+		"align": [ "wide", "full" ]
 	},
-	"textdomain": "boilerplate",
+	"attributes": {
+		"cols": {
+			"type": "number",
+			"default": 2
+		},
+		"separation": {
+			"type": "string",
+			"default": "1rem"
+		}
+	},
+	"example": {
+		"attributes": {
+			"cols": 2,
+			"separation": "2rem"
+		},
+		"innerBlocks": [
+			{
+				"name": "gutenberg/team-member",
+				"attributes": {
+					"name": "John Doe",
+					"bio": "Sint nisi minim aute sint magna exercitation deserunt.",
+					"url": "https://picsum.photos/id/1012/300/200",
+					"socialLinks": [
+						{ "icon": "facebook" },
+						{ "icon": "instagram" },
+						{ "icon": "twitter" }
+					]
+				}
+			},
+			{
+				"name": "gutenberg/team-member",
+				"attributes": {
+					"name": "Mary Smith",
+					"bio": "Aliquip proident qui nostrud nulla velit.",
+					"url": "https://picsum.photos/id/1011/300/200",
+					"socialLinks": [
+						{ "icon": "facebook" },
+						{ "icon": "instagram" },
+						{ "icon": "twitter" }
+					]
+				}
+			}
+		]
+	},
+	"textdomain": "gutenberg",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css"
